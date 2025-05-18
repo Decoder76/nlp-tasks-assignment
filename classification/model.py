@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 # 1. Load dataset
 # Make sure this path is correct or change to relative path "classification_dataset.csv"
 # if model.py and the CSV are in the same directory and you run from that directory.
-data = pd.read_csv("/home/lokesh/Project/Python/rnn_assignment/classification/classification_dataset.csv")
+data = pd.read_csv("classification_dataset.csv") # specifiy dataset path under read_csv function 
 texts = data['Text'].values
 labels = data['Label'].values
 
