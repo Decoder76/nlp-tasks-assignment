@@ -1,0 +1,11 @@
+# .gitignore
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+*.h5
+*.keras
+*.pkl
+*.png 
+# Add any other files/folders you don't want to track
