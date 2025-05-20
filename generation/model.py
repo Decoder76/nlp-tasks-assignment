@@ -130,7 +130,7 @@ def generate_text(seed_text, next_words, model, tokenizer, max_sequence_len):
         predicted_probabilities = model.predict(token_list_padded, verbose=0)[0]
         
         # Inside generate_text, after getting probabilities
-        temperature = 0.5 # Experiment with values like 0.2, 0.5, 1.0, 1.2
+        temperature = 1.2 # Experiment with values like 0.2, 0.5, 1.0, 1.2
         scaled_probabilities = np.log(predicted_probabilities) / temperature
         exp_probabilities = np.exp(scaled_probabilities)
         final_probabilities = exp_probabilities / np.sum(exp_probabilities)
@@ -170,8 +170,8 @@ seed_example = " ".join(text_data.split()[:seq_length]) if len(text_data.split()
 
 if hasattr(model, 'layers'): # Check if model is trained/loaded
     generated_output = generate_text(seed_example, 20, model, tokenizer, seq_length)
-    print("\nGenerated Output:")
-    print(generated_output)
+    print("\nGenerated Output:\n")
+    print(generated_output.upper())
 
     print("\nTo generate text again later with saved model and tokenizer:")
     print("1. Load the model: `tf.keras.models.load_model('generation_rnn_model.keras')`")
