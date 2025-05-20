@@ -14,7 +14,7 @@ This project uses Python and several common data science/machine learning librar
     ```
 3.  **Install dependencies:**
     ```bash
-    pip install pandas numpy scikit-learn tensorflow matplotlib
+    pip install -r requirements.txt
     ```
     *(Note: `tensorflow` includes `keras`)*
 
