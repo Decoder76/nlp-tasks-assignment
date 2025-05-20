@@ -1,25 +1,6 @@
-# Sutram Solutions - Internship Assignment: Simple RNN for NLP Tasks
+Internship Assignment: Simple RNN for NLP Tasks
 
 This repository contains the solution for the mandatory assignment: "Design and Implement a Simple (RNN)" which performs two distinct NLP tasks: Educational Text Classification and Next Word Generation.
-
-## Project Structure
-
-rnn_assignment/
-│
-├── classification/
-│   ├── classification_dataset.csv  # Dataset for text classification
-│   ├── model.py                    # Script for classification model
-│   ├── classification_rnn.keras    # Saved classification model
-│   ├── label_mapping.txt           # Mapping for classification labels
-│   └── training_history.png        # Plot of classification training (if generated)
-│
-├── generation/
-│   ├── science_corpus.txt          # Corpus for text generation
-│   ├── model.py                    # Script for generation model
-│   ├── generation_rnn_model.keras  # Saved generation model
-│   └── generation_tokenizer.pkl    # Saved tokenizer for generation
-│
-└── README.md                       # This file
 
 ## Setup and Dependencies
 
