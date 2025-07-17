@@ -3,8 +3,6 @@
 =======
 Internship Assignment: Simple RNN for NLP Tasks
 
-
-### Internship Assignment – Sutram Solutions Pvt. Ltd.  
 **Submitted by:** Lokesh
 **Track:** Applied AI/ML – NLP Focus  
 
